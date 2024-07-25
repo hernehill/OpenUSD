@@ -17,6 +17,7 @@ pxr_plugin(sdrOsl
         ${OIIO_LIBRARIES}
 
     INCLUDE_DIRS
+        ${IMATH_INCLUDE_DIR}
         ${OPENEXR_INCLUDE_DIR}
         ${OSL_INCLUDE_DIR}
         ${OIIO_INCLUDE_DIRS}
