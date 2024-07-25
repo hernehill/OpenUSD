@@ -18,7 +18,6 @@ requires = [
     "tbb-2020.3",
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
-    "ocio-2.3",
     "OpenSubdiv-3.6",
     "materialx-1.38",
     "openvdb-11.0",
