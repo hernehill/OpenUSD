@@ -6,3 +6,4 @@
 _rez_build
 .vscode
 .idea
+__pycache__

@@ -1,6 +1,10 @@
+# System-level requirements (on top of the obvious gcc, cmake, etc):
+# - doxygen
+# - dot
+
 name = "usd"
 
-version = "23.11.hh.1.0.1"
+version = "23.11.hh.1.0.0"
 
 authors = [
     "Pixar",

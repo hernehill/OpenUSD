@@ -45,8 +45,8 @@ option(PXR_BUILD_ALEMBIC_PLUGIN "Build the Alembic plugin for USD" ON)  # Marcel
 option(PXR_BUILD_DRACO_PLUGIN "Build the Draco plugin for USD" OFF)
 option(PXR_BUILD_PRMAN_PLUGIN "Build the PRMan imaging plugin" OFF)
 option(PXR_ENABLE_MATERIALX_SUPPORT "Enable MaterialX support" ON)  # Marcelo: was OFF
-option(PXR_BUILD_DOCUMENTATION "Generate doxygen documentation" ON)  # Marcelo: was OFF
-option(PXR_BUILD_PYTHON_DOCUMENTATION "Generate Python documentation" ON)  # Marcelo: was OFF
+option(PXR_BUILD_DOCUMENTATION "Generate doxygen documentation" OFF)
+option(PXR_BUILD_PYTHON_DOCUMENTATION "Generate Python documentation" OFF)
 option(PXR_ENABLE_PYTHON_SUPPORT "Enable Python based components for USD" ON)
 option(PXR_USE_DEBUG_PYTHON "Build with debug python" OFF)
 option(PXR_ENABLE_HDF5_SUPPORT "Enable HDF5 backend in the Alembic plugin for USD" ON)  # Marcelo: was OFF
