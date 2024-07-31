@@ -4,7 +4,7 @@
 
 name = "usd"
 
-version = "23.11.hh.1.0.0"
+version = "23.11.hh.1.0.1"
 
 authors = [
     "Pixar",
@@ -19,6 +19,7 @@ with scope("config") as c:
 
 requires = [
     "PyOpenGL",
+    "PySide2",  # for py3.12 (CY2025), we may need to use PySide6, but not confirmed yet
     "tbb-2020.3",
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
@@ -32,7 +33,6 @@ requires = [
 
 private_build_requires = [
     "Jinja2",
-    "PySide6",
 ]
 
 variants = [
