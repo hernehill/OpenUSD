@@ -19,7 +19,6 @@ with scope("config") as c:
 
 requires = [
     "PyOpenGL",
-    "PySide2",  # for py3.12 (CY2025), we may need to use PySide6, but not confirmed yet
     "tbb-2020.3",
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
@@ -36,11 +35,11 @@ private_build_requires = [
 ]
 
 variants = [
-    ["python-3.7"],
-    ["python-3.9"],
-    ["python-3.10"],
-    ["python-3.11"],
-    ["python-3.12"],
+    ["python-3.7", "PySide2"],
+    ["python-3.9", "PySide2"],
+    ["python-3.10", "PySide2"],
+    ["python-3.11", "PySide6"],
+    ["python-3.12", "PySide6"],
 ]
 
 
