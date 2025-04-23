@@ -1,6 +1,6 @@
 name = "usd"
 
-version = "24.11.hh.1.0.0"
+version = "24.11.hh.1.0.1"
 
 authors = [
     "Pixar",

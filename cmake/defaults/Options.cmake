@@ -87,7 +87,7 @@ if(APPLE)
     set(pxr_enable_metal "ON")
 endif()
 option(PXR_ENABLE_METAL_SUPPORT "Enable Metal based components" "${pxr_enable_metal}")
-option(PXR_ENABLE_VULKAN_SUPPORT "Enable Vulkan based components" OFF)
+option(PXR_ENABLE_VULKAN_SUPPORT "Enable Vulkan based components" ON)  # Marcelo: was OFF
 option(PXR_ENABLE_GL_SUPPORT "Enable OpenGL based components" ON)
 
 # Precompiled headers are a win on Windows, not on gcc.
