@@ -14,6 +14,7 @@ with scope("config") as c:
 
 requires = [
     "PyOpenGL",
+    "vulkanSDK",
     "tbb-2020.3",
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
