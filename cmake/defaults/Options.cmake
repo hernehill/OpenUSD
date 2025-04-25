@@ -13,6 +13,7 @@ set(IMATH_INCLUDE_DIR $ENV{IMATH_INCLUDE_DIR})
 set(VULKAN_AVAILABLE OFF)
 if(DEFINED ENV{REZ_VULKANSDK_ROOT})
     set(VULKAN_AVAILABLE ON)
+endif()
 #####################################################
 
 option(PXR_STRICT_BUILD_MODE "Turn on additional warnings. Enforce all warnings as errors." OFF)
