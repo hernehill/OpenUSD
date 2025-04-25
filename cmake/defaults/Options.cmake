@@ -9,6 +9,10 @@
 # REZ
 set(ALEMBIC_DIR $ENV{ALEMBIC_ROOT})
 set(IMATH_INCLUDE_DIR $ENV{IMATH_INCLUDE_DIR})
+
+set(VULKAN_AVAILABLE OFF)
+if(DEFINED ENV{REZ_VULKANSDK_ROOT})
+    set(VULKAN_AVAILABLE ON)
 #####################################################
 
 option(PXR_STRICT_BUILD_MODE "Turn on additional warnings. Enforce all warnings as errors." OFF)
@@ -87,7 +91,7 @@ if(APPLE)
     set(pxr_enable_metal "ON")
 endif()
 option(PXR_ENABLE_METAL_SUPPORT "Enable Metal based components" "${pxr_enable_metal}")
-option(PXR_ENABLE_VULKAN_SUPPORT "Enable Vulkan based components" ON)  # Marcelo: was OFF
+option(PXR_ENABLE_VULKAN_SUPPORT "Enable Vulkan based components" ${VULKAN_AVAILABLE})  # Marcelo: if VulkanSDK is available
 option(PXR_ENABLE_GL_SUPPORT "Enable OpenGL based components" ON)
 
 # Precompiled headers are a win on Windows, not on gcc.
