@@ -34,8 +34,9 @@ variants = [
     ["python-3.7", "PySide2"],
     ["python-3.9", "PySide2"],
     ["python-3.10", "PySide2"],
-    ["python-3.11", "PySide6"],
-    ["python-3.12", "PySide6"],
+    ["python-3.11.4", "PySide6"],  # Maya 2025: undefined symbol _PyModule_add issue
+    ["python-3.11.9", "PySide6"],  # Maya 2026: undefined symbol _PyModule_add issue
+    # ["python-3.12", "PySide6"],  # not used by VFX Reference Platform
 ]
 
 def commands():
