@@ -1,6 +1,6 @@
 name = "usd"
 
-version = "24.11.hh.1.0.2"
+version = "24.11.hh.1.1.0"
 
 authors = [
     "Pixar",
@@ -21,7 +21,7 @@ requires = [
     "OpenSubdiv-3.6",
     "materialx-1.38",
     "openvdb-11.0",
-    "ocio-2.1",  # being explicit here in case we have oiio 2.5.9 against ocio-2.3.2
+    "ocio-2.2",  # being explicit here to avoid ocio-2.3.2
     "oiio-2.5.9",
     "osl-1.13",
 ]
