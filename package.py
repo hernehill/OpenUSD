@@ -22,8 +22,8 @@ requires = [
     "materialx-1.38",
     "openvdb-11.0",
     "ocio-2.2",  # being explicit here to avoid ocio-2.3.2
-    "oiio-2.5.9",
-    "osl-1.13",
+    "oiio-2.5.16",
+    "osl-1.14",
 ]
 
 private_build_requires = [
