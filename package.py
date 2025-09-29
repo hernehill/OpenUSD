@@ -31,7 +31,7 @@ private_build_requires = [
 ]
 
 variants = [
-    ["python-3.7", "PySide2"],
+    # ["python-3.7", "PySide2"],
     ["python-3.9", "PySide2"],
     ["python-3.10", "PySide2"],
     ["python-3.11.4", "PySide6"],  # Maya 2025: undefined symbol _PyModule_add issue
