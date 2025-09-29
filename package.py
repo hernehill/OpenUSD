@@ -1,6 +1,6 @@
 name = "usd"
 
-version = "24.11.hh.1.1.0"
+version = "25.08.hh.1.0.0"
 
 authors = [
     "Pixar",
@@ -15,7 +15,7 @@ with scope("config") as c:
 requires = [
     "PyOpenGL",
     # "vulkanSDK",
-    "tbb-2020.3",
+    "tbb-2022.2",
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
     "OpenSubdiv-3.6",
