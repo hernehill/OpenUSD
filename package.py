@@ -15,7 +15,7 @@ with scope("config") as c:
 requires = [
     "PyOpenGL",
     # "vulkanSDK",
-    "tbb-2022.2",
+    "tbb-2021.9",
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
     "OpenSubdiv-3.6",
