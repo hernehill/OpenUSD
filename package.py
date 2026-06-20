@@ -1,6 +1,6 @@
 name = "usd"
 
-version = "25.11.hh.1.0.0"
+version = "25.11.hh.1.0.1"
 
 authors = [
     "Pixar",
@@ -18,7 +18,7 @@ requires = [
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
     "OpenSubdiv-3.6",
-    "materialx-1.39",
+    "materialx-1.39.4",  # always use exact version that Pixar used
     "openvdb-11.0",
     "ocio-2.2",  # being explicit here to avoid ocio-2.3.2
     "oiio-2.5.16",
