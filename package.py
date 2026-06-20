@@ -14,11 +14,11 @@ with scope("config") as c:
 
 requires = [
     "PyOpenGL",
-    "tbb-2022.2",  # "tbb-2021.9",
+    "tbb-2021.9",
     "alembic-1.8",
     "openexr-3.1",  # will bring imath
     "OpenSubdiv-3.6",
-    "materialx-1.38",
+    "materialx-1.39",
     "openvdb-11.0",
     "ocio-2.2",  # being explicit here to avoid ocio-2.3.2
     "oiio-2.5.16",
