@@ -23,7 +23,7 @@ requires = [
     "ocio-2.2",  # being explicit here to avoid ocio-2.3.2
     "oiio-2.5.16",
     "osl-1.14",
-    "vulkanSDK",
+    "vulkanSDK-1.4.321.0",
 ]
 
 private_build_requires = [
