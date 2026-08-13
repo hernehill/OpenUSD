@@ -31,6 +31,18 @@ if (pySideImportResult EQUAL 1 OR PYSIDE_USE_PYSIDE2)
     endif()
 endif()
 
+# The pyside6-uic console-script shim shipped by our rez-pip PySide6_Essentials
+# package is a broken launcher stub (it silently exits 1 with no output). The
+# real Qt uic binary lives alongside the PySide6 module instead, so prefer
+# that one when building inside a rez environment that resolved the package.
+if (pySideImportResult STREQUAL "PySide6" AND DEFINED ENV{REZ_PYSIDE6_ESSENTIALS_ROOT})
+    set(_pyside6_real_uic "$ENV{REZ_PYSIDE6_ESSENTIALS_ROOT}/python/PySide6/uic.exe")
+    if (EXISTS "${_pyside6_real_uic}")
+        set(PYSIDEUICBINARY "${_pyside6_real_uic}" CACHE FILEPATH "Path to the PySide uic binary" FORCE)
+    endif()
+    unset(_pyside6_real_uic)
+endif()
+
 # If nothing is found, the result will be <VAR>-NOTFOUND.
 find_program(PYSIDEUICBINARY NAMES ${pySideUIC} HINTS ${PYSIDE_BIN_DIR})
 

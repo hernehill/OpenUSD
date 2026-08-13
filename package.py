@@ -31,11 +31,9 @@ private_build_requires = [
 ]
 
 variants = [
-    # ["python-3.7", "PySide2"],
     ["python-3.9", "PySide2"],
     ["python-3.10", "PySide2"],
     ["python-3.11.9", "PySide6"],  # Maya 2026: undefined symbol _PyModule_add issue
-    # ["python-3.12", "PySide6"],
 ]
 
 def commands():
@@ -47,8 +45,6 @@ def commands():
     env.USD_PYTHON_DIR = "{root}/lib/python"
     env.PATH.append("{root}/bin")
     env.PATH.append("{root}/lib")
-    env.LD_LIBRARY_PATH.append("{root}/bin")
-    env.LD_LIBRARY_PATH.append("{root}/lib")
     env.PYTHONPATH.append("{root}/lib/python")
 
 
