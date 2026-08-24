@@ -1,6 +1,6 @@
 name = "usd"
 
-version = "25.11.hh.1.0.1"
+version = "25.11.hh.1.0.2"
 
 authors = [
     "Pixar",
@@ -28,6 +28,7 @@ requires = [
 
 private_build_requires = [
     "Jinja2",
+    "visual_studio",
 ]
 
 variants = [
