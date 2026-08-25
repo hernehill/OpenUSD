@@ -48,5 +48,8 @@ def commands():
     env.PATH.append("{root}/lib")
     env.PYTHONPATH.append("{root}/lib/python")
 
+    # Give Tf's WindowsImportWrapper a curated DLL search list instead of
+    # letting it walk the full pipeline PATH.
+    env.PXR_USD_WINDOWS_DLL_PATH = str(env.PATH)
 
 uuid = "repository.OpenUSD"
