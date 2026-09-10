@@ -1,6 +1,6 @@
 name = "usd"
 
-version = "25.11.hh.1.0.2"
+version = "25.11.hh.1.0.3"
 
 authors = [
     "Pixar",
@@ -45,11 +45,13 @@ def commands():
     env.USD_LIBRARY_DIR = "{root}/lib"
     env.USD_PYTHON_DIR = "{root}/lib/python"
     env.PATH.append("{root}/bin")
-    env.PATH.append("{root}/lib")
+    env.LIB.append("{root}/lib")
+    env.LD_LIBRARY_PATH.append("{root}/lib")
+    env.LD_LIBRARY_PATH.append("{root}/plugin/usd")
     env.PYTHONPATH.append("{root}/lib/python")
 
     # Give Tf's WindowsImportWrapper a curated DLL search list instead of
     # letting it walk the full pipeline PATH.
-    env.PXR_USD_WINDOWS_DLL_PATH = str(env.PATH)
+    env.PXR_USD_WINDOWS_DLL_PATH = str(env.LD_LIBRARY_PATH)
 
 uuid = "repository.OpenUSD"
