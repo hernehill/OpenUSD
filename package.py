@@ -19,7 +19,6 @@ requires = [
     "openexr-3.1",  # will bring imath
     "OpenSubdiv-3.6",
     "materialx-1.39.4",  # always use exact version that Pixar used
-    "openvdb-11.0",
     "ocio-2.2",  # being explicit here to avoid ocio-2.3.2
     "oiio-2.5.16",
     "osl-1.14",
@@ -32,9 +31,11 @@ private_build_requires = [
 ]
 
 variants = [
-    ["python-3.9", "PySide2"],
-    ["python-3.10", "PySide2"],
-    ["python-3.11.9", "PySide6"],  # Maya 2026: undefined symbol _PyModule_add issue
+    ["python-3.9", "PySide2", "openvdb-11.0"],
+    ["python-3.10", "PySide2", "openvdb-11.0"],
+    ["python-3.10", "PySide2", "openvdb-12.0"],
+    ["python-3.11.9", "PySide6", "openvdb-11.0"],  # Maya 2026: undefined symbol _PyModule_add issue
+    ["python-3.11.9", "PySide6", "openvdb-12.0"],  # Maya 2026: undefined symbol _PyModule_add issue
 ]
 
 def commands():
