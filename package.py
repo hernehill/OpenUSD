@@ -46,6 +46,8 @@ def commands():
     env.USD_LIBRARY_DIR = "{root}/lib"
     env.USD_PYTHON_DIR = "{root}/lib/python"
     env.PATH.append("{root}/bin")
+    env.PATH.append("{root}/lib")
+    env.PATH.append("{root}/plugin/usd")
     env.LIB.append("{root}/lib")
     env.LD_LIBRARY_PATH.append("{root}/lib")
     env.LD_LIBRARY_PATH.append("{root}/plugin/usd")
