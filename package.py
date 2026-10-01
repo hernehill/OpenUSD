@@ -41,12 +41,17 @@ def commands():
     env.USD_LOCATION = "{root}"
     env.USD_INCLUDE_DIR = "{root}/include"
     env.USD_LIBRARY_DIR = "{root}/lib"
-    env.USD_PYTHON_DIR = "{root}/lib/python"
     env.PATH.append("{root}/bin")
     env.PATH.append("{root}/lib")
     env.LD_LIBRARY_PATH.append("{root}/bin")
     env.LD_LIBRARY_PATH.append("{root}/lib")
-    env.PYTHONPATH.append("{root}/lib/python")
+
+    if "python" in resolve:
+        python_ver = resolve["python"].version
+        if python_ver.major == 3:
+            if python_ver.minor == 13:
+                env.USD_PYTHON_DIR = "{root}/lib/python3.13/site-packages"
+                env.PYTHONPATH.append("{root}/lib/python3.13/site-packages")
 
 
 uuid = "repository.OpenUSD"
