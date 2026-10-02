@@ -18,7 +18,7 @@ requires = [
     "alembic-1.8.9",
     "openexr-3.4.4",  # will bring imath
     "OpenSubdiv-3.7",
-    "materialx-1.39.5",
+    "materialx-1.39.4",  # maya-usd 0.37.0 cannot handle 1.39.5+
     "openvdb-13.0",
     "ocio-2.5.2",
     "oiio-3.0.9.1",
